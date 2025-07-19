@@ -242,4 +242,5 @@ class AuthController extends Controller
         // Réponse de succès
         return response()->json(['message' => 'Déconnexion réussie.'], 200);
     }
+    
 }
