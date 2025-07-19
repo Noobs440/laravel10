@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Usecases\Authcontroller;
+use App\Http\Controllers\Usecases\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,5 +19,5 @@ use App\Http\Controllers\Usecases\Authcontroller;
 // });
 
 
-Route::get('user/verify/{token}', [Authcontroller::class, 'verifyAccount'])->name('user.verify');
+Route::get('user/verify/{token}', [AuthController::class, 'verifyAccount'])->name('user.verify');
 
